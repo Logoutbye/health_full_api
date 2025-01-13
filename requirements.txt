@@ -1,0 +1,11 @@
+flask
+pytesseract
+pdf2image
+PyPDF2
+Pillow
+werkzeug
+easyocr
+google-cloud-vision
+boto3
+paddleocr
+gunicorn

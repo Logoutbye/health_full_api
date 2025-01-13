@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Report Parser API Instructions</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #555;
+        }
+        code {
+            background: #e8e8e8;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 0.95em;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to the Blood Report Parser API!</h1>
+        <div class="section">
+            <h2>Usage</h2>
+            <p>Use the <code>/upload</code> endpoint to upload PDF or image files containing blood test reports.</p>
+        </div>
+        <div class="section">
+            <h2>Method</h2>
+            <p><strong>POST</strong></p>
+        </div>
+        <div class="section">
+            <h2>Endpoint</h2>
+            <p><code>/upload</code></p>
+        </div>
+        <div class="section">
+            <h2>Parameters</h2>
+            <ul>
+                <li><strong>file</strong>: Required. One or more files to be uploaded. Accepted formats: PDF, PNG, JPG, JPEG.</li>
+            </ul>
+        </div>
+        <div class="section">
+            <h2>Example Request</h2>
+            <p>You can use the following <code>curl</code> command to test the upload:</p>
+            <pre><code>curl -X POST -F 'file=@path/to/your/file.pdf' http://<host>:<port>/upload</code></pre>
+        </div>
+    </div>
+</body>
+</html>
